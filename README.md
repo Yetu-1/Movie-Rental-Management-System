@@ -14,15 +14,15 @@ Features
 Classes
     Account
         sub account - admin and customer
-            customer account attributes
-                name
-                amount in account
-                rank
-                currently rented books (yet to retuned)
-                returned books 
-            admin account attributes
-                name
-                access key
+        customer account attributes
+            name
+            amount in account
+            rank
+            currently rented books (yet to retuned)
+            returned books 
+        admin account attributes
+            name
+            access key
 
     Movie
         attributes
