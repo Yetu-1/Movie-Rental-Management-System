@@ -12,17 +12,6 @@ Features
 -Customers can either be gold, sliver or bronze members based on how much movies they’ve rented and can get discounts based on this.
 
 Classes
-    Account
-        sub account - admin and customer
-        customer account attributes
-            name
-            amount in account
-            rank
-            currently rented books (yet to retuned)
-            returned books 
-        admin account attributes
-            name
-            access key
 
     Movie
         attributes
@@ -35,3 +24,14 @@ Classes
             available or rented out
     Pages
         sub pages - home, search, movie page, account page, 
+    Account
+        sub account - admin and customer
+        customer account attributes
+            name
+            amount in account
+            rank
+            currently rented books (yet to retuned)
+            returned books 
+        admin account attributes
+            name
+            access key
