@@ -10,10 +10,15 @@
 #include <iostream>
 #include "main.h"
 
+ACCOUNT new_account;
 
 int main()
 {
+    new_account.name = "David Salihu";
+    new_account.rank = GOLD;
+    new_account.setEmail("davidsalihu19@gmial.com");
+    new_account.setShippingAddress("Akure, Ondo State, Nigeria");
 
-    std::cout<<"Hello world\n";
+    new_account.printProfile();
     return 0;
 }

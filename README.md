@@ -32,6 +32,8 @@ Classes
             rank
             currently rented books (yet to retuned)
             returned books 
+            email
+            shipping address
         admin account attributes
             name
             access key
