@@ -11,7 +11,7 @@
 #include "EnumDefinitions.h"
 #include "Movie.h"
 
-std::string ranks[5] = {"BRONZE", "SLIVER", "GOLD", "PLATINUM"};
+std::string ranks[5] = {"BRONZE", "SLIVER", "GOLD", "PLATINUM","ADMIN"};
 
 class ACCOUNT
 {
@@ -32,7 +32,14 @@ class CUSTOMER_ACCOUNT : public ACCOUNT
 {
 public:
     //Movie rented_movies[MAX_RENTABLE_MOVIES];
+    uint8_t account_level;
+    uint16_t account_balance;
+    uint8_t movies_curr_rented_id[MAX_RENTABLE_MOVIES];
+    //CUSTOMER_ACCOUNT();
     void printProfile();
+    void rechargeAccount();
+    void updateRank();
+    void updateAccount();
 };
 
 class ADMIN_ACCOUNT : public ACCOUNT
@@ -40,5 +47,7 @@ class ADMIN_ACCOUNT : public ACCOUNT
 public:
     void printProfile();
 };
+
+CUSTOMER_ACCOUNT createNewAccount();
 
 #endif // SRC_ACCOUNT_H_

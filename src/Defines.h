@@ -10,5 +10,7 @@
 #ifndef SRC_DEFINES_H_
 #define SRC_DEFINES_H_
 
+#define MAX_RENTABLE_MOVIES 3
+
 
 #endif // SRC_DEFINES_H_

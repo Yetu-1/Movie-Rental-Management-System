@@ -19,7 +19,7 @@ public:
     std::string plot_des;
     uint16_t no_in_stock;
     STOCK_STATUS status;
-    uint8_t rating;
+    uint16_t rating;
     uint16_t price;
     uint8_t move_id;
 
@@ -28,4 +28,7 @@ public:
     std::string getRecord();
     void printRecord();
 };
+
+Movie addNewMovie();
+void editMovieProperties();
 #endif //SRC_MOVIE_H_

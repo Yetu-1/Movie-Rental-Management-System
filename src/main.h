@@ -12,11 +12,13 @@
 #ifndef SRC_MAIN_H_
 #define SRC_MAIN_H_
 
+
+#include <string>
+
 #include "Account.h"
 #include "Account.cpp"
 
 #include "Movie.h"
 #include "Movie.cpp"
-
 
 #endif // SRC_MAIN_H_
