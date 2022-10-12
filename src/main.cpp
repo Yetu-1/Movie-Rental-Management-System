@@ -10,14 +10,14 @@
 #include <iostream>
 #include "main.h"
 
-ACCOUNT new_account;
+CUSTOMER_ACCOUNT new_account;
 
 int main()
 {
-    new_account.name = "David Salihu";
+    //new_account.name = "David Salihu";
     new_account.rank = GOLD;
-    new_account.setEmail("davidsalihu19@gmial.com");
-    new_account.setShippingAddress("Akure, Ondo State, Nigeria");
+    new_account.email = "davidsalihu19@gmial.com";
+    new_account.shipping_address = "Akure, Ondo State, Nigeria";
 
     new_account.printProfile();
     return 0;

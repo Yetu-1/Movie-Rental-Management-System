@@ -10,23 +10,19 @@ ACCOUNT::ACCOUNT()
 {
     name = "unknown";
     rank = BRONZE;
+    password = "";
+    shipping_address = "";
+    email = "";
 }
 
-void ACCOUNT::setEmail(std::string email)
-{
-    this->email = email;
-}
+void ACCOUNT::printProfile(){}
 
-void ACCOUNT::setShippingAddress(std::string address)
-{
-    shipping_address = address;
-}
+ACCOUNT::~ACCOUNT(){}
 
-void ACCOUNT::printProfile()
+void CUSTOMER_ACCOUNT::printProfile()
 {
     std::cout<<"NAME:    "<<name<<'\n';
     std::cout<<"RANK:    "<<ranks[rank]<<'\n';
     std::cout<<"EMAIL:   "<<email<<'\n';
     std::cout<<"ADDRESS: "<<shipping_address<<'\n';
 }
-ACCOUNT::~ACCOUNT(){}
