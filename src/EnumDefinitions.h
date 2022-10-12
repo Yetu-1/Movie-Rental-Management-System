@@ -15,4 +15,24 @@ enum RANK
     PLATINUM
 };
 
+enum MOVIE_GENRE
+{
+    ACTION,
+    COMEDY,
+    THRILLER,
+    FAMILY,
+    DRAMA,
+    SCI_FI,
+    ADVENTURE,
+    ROMANCE,
+    FANTASY,
+    UNDEFINED
+};
+
+enum STOCK_STATUS
+{
+    AVAILABLE,
+    SOLD_OUT
+};
+
 #endif // SRC_ENUMDEFINITIONS_H_
