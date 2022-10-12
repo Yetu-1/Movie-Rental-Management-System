@@ -15,5 +15,8 @@
 #include "Account.h"
 #include "Account.cpp"
 
+#include "Movie.h"
+#include "Movie.cpp"
+
 
 #endif // SRC_MAIN_H_

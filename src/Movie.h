@@ -7,21 +7,25 @@
 
 #ifndef SRC_MOVIE_H_
 #define SRC_MOVIE_H_
-
+#include <iostream>
 #include <string>
 #include "EnumDefinitions.h"
 
 class Movie
 {
-private:
-    uint8_t rating;
-    uint16_t price;
 public:
     std::string name;
-    MOVIE_GENRE genre[3];
+    std::string genre;
     std::string plot_des;
-    uint8_t NO_INSTOCK;
+    uint16_t no_in_stock;
     STOCK_STATUS status;
+    uint8_t rating;
+    uint16_t price;
+    uint8_t move_id;
 
+    Movie();
+    ~Movie();
+    std::string getRecord();
+    void printRecord();
 };
 #endif //SRC_MOVIE_H_
