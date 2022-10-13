@@ -12,7 +12,8 @@ enum RANK
     BRONZE,
     SILVER,
     GOLD,
-    PLATINUM
+    PLATINUM,
+    ADMIN
 };
 
 enum MOVIE_GENRE

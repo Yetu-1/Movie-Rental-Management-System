@@ -64,6 +64,8 @@ CUSTOMER_ACCOUNT createNewAccount()
     CUSTOMER_ACCOUNT new_account;
     std::cout<<"Enter Name: ";
     getline(std::cin, new_account.name);
+    std::cout<<"Enter New Password: ";
+    getline(std::cin, new_account.password);
     std::cout<<"Enter Email Address: ";
     getline(std::cin, new_account.email);
     std::cout<<"Enter Address: ";

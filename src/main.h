@@ -21,4 +21,5 @@
 #include "Movie.h"
 #include "Movie.cpp"
 
+void addAccountToDB(CUSTOMER_ACCOUNT);
 #endif // SRC_MAIN_H_

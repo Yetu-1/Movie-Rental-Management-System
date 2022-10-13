@@ -7,7 +7,6 @@ Features
 -Movies are grouped in categories(genre)
 -Movies can be searched by name and keyword
 -Customer account has can be recharged in dollars and when a book is rented the amount is deducted.
--Late charges are applied based on how late the books are returned.
 -Movies have properties like, ratings, price, plot description, picture if possible.
 -Customers can either be gold, sliver or bronze members based on how much movies they’ve rented and can get discounts based on this.
 
@@ -25,15 +24,14 @@ Classes
     Pages
         sub pages - home, search, movie page, account page, 
     Account
+            name
+            rank
+            email
+            shipping address
         sub account - admin and customer
         customer account attributes
-            name
             amount in account
             rank
             currently rented books (yet to retuned)
-            returned books 
-            email
-            shipping address
+            returned books - TO BE CONSIDERED
         admin account attributes
-            name
-            access key
