@@ -17,12 +17,12 @@ Movie::Movie()
     status = SOLD_OUT;
     rating = 0;
     price = 0;
-    move_id = 0;
+    movie_id = 0;
 }
 
 std::string Movie::getRecord()
 {
-    std::string s = std::to_string(move_id) + ", " + name + ", "  + genre + ", " + std::to_string(price) + ", " + movie_status[status] + ", " + std::to_string(no_in_stock) + "\n";
+    std::string s = std::to_string(movie_id) + ", " + name + ", "  + genre + ", " + std::to_string(price) + ", " + movie_status[status] + ", " + std::to_string(no_in_stock) + "\n";
     return s;
 }
 

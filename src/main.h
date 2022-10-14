@@ -22,5 +22,7 @@
 #include "Movie.cpp"
 
 void addAccountToDB(CUSTOMER_ACCOUNT);
+void addMovieToDB(Movie);
+int getAccountIdCount();
 
 #endif // SRC_MAIN_H_

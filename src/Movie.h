@@ -21,7 +21,7 @@ public:
     STOCK_STATUS status;
     uint16_t rating;
     uint16_t price;
-    uint8_t move_id;
+    uint16_t movie_id;
 
     Movie();
     ~Movie();
