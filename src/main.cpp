@@ -10,6 +10,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <Windows.h>
 
 #include "main.h"
 
@@ -18,7 +19,7 @@ Movie movie;
 
 std::fstream fout;
 std::fstream fin;
-
+uint8_t *keyboardInputs;
 uint16_t account_id_count = 0;
 uint16_t movie_id_count = 0;
 
@@ -29,12 +30,13 @@ int main()
     // addAccountToDB(account);
     // account.printProfile();
     // std::cout<<"\n\n";
-
+    keyboardInputs = new uint8_t[9];
     std::cout<<"Enter Movie details"<<std::endl;
     movie = addNewMovie();
     addMovieToDB(movie);
     movie.printRecord();
     std::cout<<"\n\n";
+    memset(keyboardInputs, 0 , 9 * sizeof(uint8_t)); 
     // movie = addNewMovie();
 
     // std::string movie_des = movie.getRecord();
